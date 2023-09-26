@@ -33,6 +33,7 @@ export class BreweriesComponent implements OnInit {
     this.dataService.getAllBreweries().subscribe({
       next: breweries => {
         this.breweries = breweries;
+        console.log(this.breweries)
         this.filteredBreweries = [...this.breweries];
         this.updateCurrentPage();
         for (let i = 0; i < this.breweries.length; i++) {
