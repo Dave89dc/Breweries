@@ -10,7 +10,7 @@
     <span class="info"><strong>PHONE NUBER: </strong>{{brewery.phone}}</span><br>
     <span class="info"><strong>POSTAL CODE: </strong>{{brewery.postal_code}}</span><br>
   </mat-card-content>
-  <mat-card-actions class="card-footer">
+  <mat-card-actions *ngIf="brewery.website_url" class="card-footer">
     <a href="{{brewery.website_url}}" target="_blank">
       <button mat-button class="website-btn">
         <span>WEBSITE</span>
