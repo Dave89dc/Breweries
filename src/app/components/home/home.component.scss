@@ -12,6 +12,7 @@
   color: #ffff;
   text-shadow: 8px 8px 16px black;
   font-size: 150px;
+  font-weight: bold;
   line-height: 135px;
   position: absolute;
   top: 70px;
@@ -59,14 +60,15 @@
   border-radius: 10px;
   width: 200px;
   position: absolute;
-  bottom: 150px;
-  right: 120px;
+  top: 367px;
+  right: 460px;
+  box-shadow: 4px 4px 16px black;
 }
 
 .arrow{
   width: 180px;
   position: absolute;
-  bottom: 122px;
+  bottom: 110px;
   right: 130px;
   cursor: pointer;
 }
