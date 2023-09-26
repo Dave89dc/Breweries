@@ -3,15 +3,15 @@
     <mat-card-title class="title"><strong>{{brewery.name}}</strong></mat-card-title>
   </mat-card-header>
   <mat-card-content class="info-box">
-    <span class="info"><strong>TYPE: </strong>{{brewery.brewery_type}}</span><br>
-    <span class="info"><strong>STATE: </strong>{{brewery.state}}</span><br>
-    <span class="info"><strong>CITY: </strong>{{brewery.city}}</span><br>
-    <span class="info"><strong>STREET: </strong>{{brewery.street}}</span><br>
-    <span class="info"><strong>PHONE NUBER: </strong>{{brewery.phone}}</span><br>
-    <span class="info"><strong>POSTAL CODE: </strong>{{brewery.postal_code}}</span><br>
+    <span *ngIf="brewery.brewery_type" class="info"><strong>TYPE: </strong>{{brewery.brewery_type | capitalize}}<br></span>
+    <span *ngIf="brewery.state" class="info"><strong>STATE: </strong>{{brewery.state}}<br></span>
+    <span *ngIf="brewery.city" class="info"><strong>CITY: </strong>{{brewery.city}}<br></span>
+    <span *ngIf="brewery.street" class="info"><strong>STREET: </strong>{{brewery.street}}<br></span>
+    <span *ngIf="brewery.phone" class="info"><strong>PHONE NUBER: </strong>{{brewery.phone}}<br></span>
+    <span *ngIf="brewery.postal_code" class="info"><strong>POSTAL CODE: </strong>{{brewery.postal_code}}<br></span>
   </mat-card-content>
-  <mat-card-actions *ngIf="brewery.website_url" class="card-footer">
-    <a href="{{brewery.website_url}}" target="_blank">
+  <mat-card-actions class="card-footer">
+    <a  *ngIf="brewery.website_url" href="{{brewery.website_url}}" target="_blank">
       <button mat-button class="website-btn">
         <span>WEBSITE</span>
       </button>

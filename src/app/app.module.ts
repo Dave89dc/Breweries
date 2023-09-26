@@ -15,6 +15,7 @@ import { HomeComponent } from './components/home/home.component';
 import { BreweriesComponent } from './components/breweries/breweries.component';
 import { BreweryCardComponent } from './components/brewery-card/brewery-card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CapitalizePipe } from './pipes/capitalize.pipe';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FooterComponent,
     HomeComponent,
     BreweriesComponent,
-    BreweryCardComponent
+    BreweryCardComponent,
+    CapitalizePipe
   ],
   imports: [
     BrowserModule,

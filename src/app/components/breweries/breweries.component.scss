@@ -9,7 +9,10 @@
 
 h1{
   text-align: center;
+  font-size: 30px;
+  font-weight: bold;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .search-box{
@@ -22,9 +25,20 @@ h1{
   margin-bottom: 60px;
 }
 
-input, select{
+input{
   width: 300px;
-  height: 100%;
+  height: 30px;
+  border-radius: 5px;
+  padding-left: 5px;
+  border: 2px solid black;
+}
+
+select{
+  width: 300px;
+  height: 36px;
+  border-radius: 5px;
+  padding-left: 5px;
+  border: 2px solid black;
 }
 
 span{

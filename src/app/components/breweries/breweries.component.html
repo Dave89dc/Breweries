@@ -1,7 +1,7 @@
 <app-header></app-header>
 <h1>Search Breweries:</h1>
 <div class="search-box">
-  <input type="text" placeholder="Serch brewery" [(ngModel)]="searchText" (input)="filterBreweries()">
+  <input type="text" placeholder="Serch Brewery" [(ngModel)]="searchText" (input)="filterBreweries()">
   <span>Or: </span>
   <select  [(ngModel)]="selectedState" (ngModelChange)="filterByState()">
     <option value="" disabled>Select State</option>
