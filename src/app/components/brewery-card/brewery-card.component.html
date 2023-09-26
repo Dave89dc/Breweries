@@ -1,0 +1,40 @@
+<mat-card *ngIf="brewery" class="example-card">
+  <mat-card-header class="card-header">
+    <mat-card-title class="title"><strong>{{brewery.name}}</strong></mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="info-box">
+    <span class="info"><strong>TYPE: </strong>{{brewery.brewery_type}}</span><br>
+    <span class="info"><strong>STATE: </strong>{{brewery.state}}</span><br>
+    <span class="info"><strong>CITY: </strong>{{brewery.city}}</span><br>
+    <span class="info"><strong>STREET: </strong>{{brewery.street}}</span><br>
+    <span class="info"><strong>PHONE NUBER: </strong>{{brewery.phone}}</span><br>
+    <span class="info"><strong>POSTAL CODE: </strong>{{brewery.postal_code}}</span><br>
+  </mat-card-content>
+  <mat-card-actions class="card-footer">
+    <a href="{{brewery.website_url}}" target="_blank">
+      <button mat-button class="website-btn">
+        <span>WEBSITE</span>
+      </button>
+    </a>
+  </mat-card-actions>
+</mat-card>
+
+
+<!-- export interface Brewery {
+  id: string
+  name: string
+  brewery_type: string
+  address_1?: string
+  address_2?: string
+  address_3: any
+  city: string
+  state_province: string
+  postal_code: string
+  country: string
+  longitude?: string
+  latitude?: string
+  phone?: string
+  website_url?: string
+  state: string
+  street?: string
+} -->

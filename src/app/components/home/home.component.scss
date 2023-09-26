@@ -1,0 +1,76 @@
+.home-container{
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffff;
+  background-image: url('../../../assets/home.jpg');
+  background-size: cover;
+}
+
+.title{
+  margin: 0px;
+  padding: 20px;
+  color: #ffff;
+  text-shadow: 8px 8px 16px black;
+  font-size: 150px;
+  line-height: 135px;
+  position: absolute;
+  top: 70px;
+  left: 70px;
+  animation: slide-in 1s ease-in-out forwards;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.home-text{
+  margin: 0px;
+  width: 600px;
+  font-size: 30px;
+  color: #ffff;
+  text-shadow: 4px 4px 10px black;
+  position: absolute;
+  bottom: 140px;
+  right: 400px;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+.flag{
+  border-radius: 10px;
+  width: 200px;
+  position: absolute;
+  bottom: 150px;
+  right: 120px;
+}
+
+.arrow{
+  width: 180px;
+  position: absolute;
+  bottom: 122px;
+  right: 130px;
+  cursor: pointer;
+}
+
+.arrow:hover{
+  transform: scale(1.2);
+}

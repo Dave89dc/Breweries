@@ -1,0 +1,19 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.header{
+  background-color: #0A3161;
+  margin-top: 0px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 5px solid #B31942;
+}
+
+.title{
+  font-size: 30px;
+  font-weight: bold;
+  color: #FFFFFF;
+  cursor: pointer;
+}

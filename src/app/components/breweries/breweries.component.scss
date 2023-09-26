@@ -1,0 +1,39 @@
+.cards-container{
+  width: 95%;
+  margin: auto;
+  padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+h1{
+  text-align: center;
+  margin-top: 40px;
+}
+
+.search-box{
+  width: 40%;
+  height: 25px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+input, select{
+  width: 300px;
+  height: 100%;
+}
+
+span{
+  font-size: 25px;
+}
+
+.paginator{
+  width: fit-content;
+  margin: auto;
+  z-index: 100;
+  overflow: hidden;
+}
